@@ -81,21 +81,16 @@ type serverRequest struct {
 	ID      *json.RawMessage `json:"id"`
 }
 
-func (r *serverRequest) reset() {
-	r.Version = ""
-	r.Method = ""
-	r.Params = nil
-	r.ID = nil
-}
-
 func (r *serverRequest) UnmarshalJSON(raw []byte) error {
-	r.reset()
-	type req *serverRequest
-	if err := json.Unmarshal(raw, req(r)); err != nil {
+	type alias serverRequest
+
+	var req alias
+	if err := json.Unmarshal(raw, &req); err != nil {
 		return errors.New("bad request")
 	}
+	*r = serverRequest(req)
 
-	var o = make(map[string]*json.RawMessage)
+	o := make(map[string]*json.RawMessage)
 	if err := json.Unmarshal(raw, &o); err != nil {
 		return errors.New("bad request")
 	}
