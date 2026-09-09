@@ -1,3 +1,3 @@
-module github.com/powerman/rpc-codec
+module github.com/GAK00/rpc-codec
 
-go 1.16
+go 1.27
