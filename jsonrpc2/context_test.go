@@ -12,7 +12,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/powerman/rpc-codec/jsonrpc2"
+	"github.com/GAK00/rpc-codec/jsonrpc2"
 )
 
 type contextKey int
@@ -70,14 +70,15 @@ func TestNoContext(t *testing.T) {
 }
 
 // - for each of these servers:
-//   * TCP server without context
-//   * TCP server with context
-//   * HTTP server with context
+//   - TCP server without context
+//   - TCP server with context
+//   - HTTP server with context
+//
 // - call these methods:
-//   * Sum()
-//   * Name()
-//   * NameCtx()
-//   * TODO batch call all
+//   - Sum()
+//   - Name()
+//   - NameCtx()
+//   - TODO batch call all
 func TestContext(t *testing.T) {
 	// Server provide a TCP transport without context.
 	serverTCPNoCtx, err := net.Listen("tcp", "127.0.0.1:0")

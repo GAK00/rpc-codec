@@ -1,3 +1,4 @@
+//go:build go1.3
 // +build go1.3
 
 package jsonrpc2_test
@@ -10,7 +11,7 @@ import (
 	"net/rpc/jsonrpc"
 	"testing"
 
-	"github.com/powerman/rpc-codec/jsonrpc2"
+	"github.com/GAK00/rpc-codec/jsonrpc2"
 )
 
 type client interface {

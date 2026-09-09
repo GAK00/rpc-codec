@@ -1,4 +1,4 @@
-# JSON-RPC 2.0 [![GoDoc](https://godoc.org/github.com/powerman/rpc-codec/jsonrpc2?status.svg)](http://godoc.org/github.com/powerman/rpc-codec/jsonrpc2) [![CircleCI](https://circleci.com/gh/powerman/rpc-codec.svg?style=svg)](https://circleci.com/gh/powerman/rpc-codec) [![Coverage Status](https://coveralls.io/repos/powerman/rpc-codec/badge.svg?branch=master&service=github)](https://coveralls.io/github/powerman/rpc-codec?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/powerman/rpc-codec)](https://goreportcard.com/report/github.com/powerman/rpc-codec)
+# JSON-RPC 2.0 [![GoDoc](https://godoc.org/github.com/GAK00/rpc-codec/jsonrpc2?status.svg)](http://godoc.org/github.com/GAK00/rpc-codec/jsonrpc2) [![CircleCI](https://circleci.com/gh/GAK00/rpc-codec.svg?style=svg)](https://circleci.com/gh/GAK00/rpc-codec) [![Coverage Status](https://coveralls.io/repos/GAK00/rpc-codec/badge.svg?branch=master&service=github)](https://coveralls.io/github/GAK00/rpc-codec?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/GAK00/rpc-codec)](https://goreportcard.com/report/github.com/GAK00/rpc-codec)
 
 jsonrpc2 is a codec for net/rpc.
 
@@ -16,16 +16,16 @@ Also provides command-line tool `jsonrpc2client`.
 ## Installation
 
 ```sh
-go get github.com/powerman/rpc-codec/...
+go get github.com/GAK00/rpc-codec/...
 ```
 
 Or, if you need only `jsonrpc2client` tool, then download binary for your
 OS manually from
-[releases](https://github.com/powerman/rpc-codec/releases) or run this to
+[releases](https://github.com/GAK00/rpc-codec/releases) or run this to
 install the latest version:
 
 ```sh
-curl -sfL $(curl -s https://api.github.com/repos/powerman/rpc-codec/releases/latest | grep -i /jsonrpc2client-$(uname -s)-$(uname -m)\" | cut -d\" -f4) | sudo install /dev/stdin /usr/local/bin/jsonrpc2client
+curl -sfL $(curl -s https://api.github.com/repos/GAK00/rpc-codec/releases/latest | grep -i /jsonrpc2client-$(uname -s)-$(uname -m)\" | cut -d\" -f4) | sudo install /dev/stdin /usr/local/bin/jsonrpc2client
 ```
 
 ## Usage

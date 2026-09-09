@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/powerman/rpc-codec/jsonrpc2"
+	"github.com/GAK00/rpc-codec/jsonrpc2"
 )
 
 // Svc is an RPC service for testing.
